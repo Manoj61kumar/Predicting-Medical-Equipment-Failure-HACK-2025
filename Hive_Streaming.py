@@ -203,7 +203,7 @@ def save_and_upload(records, filename=LOCAL_CSV_FILENAME):
         blob_container_client.upload_blob(blob_name, data, overwrite=True)
     logger.info(f"Uploaded file '{blob_name}' to Azure Blob Storage.")
 
-batch_size = 1
+batch_size = 100
 batch_records = []
 
 def streaming_processing_loop():
