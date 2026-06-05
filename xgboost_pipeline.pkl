@@ -1,0 +1,5 @@
+import joblib
+
+# Save the trained XGBoost pipeline to file
+joblib.dump(pipeline, "xgboost_pipeline.pkl")
+print("✅ Model saved as xgboost_pipeline.pkl")
