@@ -1,4 +1,6 @@
 # Step 1: Install dependencies (run once in Colab)
+!pip uninstall -y pyspark py4j -q
+!pip install pyspark==3.5.1
 !pip install azure-storage-blob
 !pip install findspark pyspark paho-mqtt pandas joblib faker gradio
 !apt-get update
@@ -39,8 +41,8 @@ spark = SparkSession.builder.appName("HiveMQ_IoT_ML_Streaming").getOrCreate()
 
 BROKER = "d690d71ce3ee4d498f665096ba46111e.s1.eu.hivemq.cloud"
 PORT = 8883
-USERNAME = "hivemq.webclient.1780063566182"
-PASSWORD = "HU,>ZM5efs3c4dGQ%:o8"
+USERNAME = "hivemq.webclient.1780644977411"
+PASSWORD = "U40u98R<jWXhl:>dQfA%"
 TOPIC = "iot/failure"
 fake = Faker()
 
