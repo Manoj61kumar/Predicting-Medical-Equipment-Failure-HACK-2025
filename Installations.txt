@@ -1,5 +1,8 @@
+!pip uninstall -y pyspark py4j -q
+!pip install pyspark==3.5.1
+!pip install azure-storage-blob
+!pip install findspark pyspark paho-mqtt pandas joblib faker gradio
 !apt-get update
 !apt-get install openjdk-17-jdk -y
 !wget https://archive.apache.org/dist/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz
 !tar xf /content/spark-3.5.1-bin-hadoop3.tgz
-!pip install findspark pyspark paho-mqtt pandas joblib faker
